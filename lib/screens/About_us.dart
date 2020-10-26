@@ -7,7 +7,7 @@ class AboutUs extends StatelessWidget {
       appBar: AppBar(
 
         title: Text(
-          'Student Health App',
+          'About Us',
           textAlign: TextAlign.center,
           style: TextStyle(
             fontSize: 18,

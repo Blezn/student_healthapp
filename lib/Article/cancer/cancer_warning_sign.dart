@@ -23,30 +23,323 @@ class CancerWarningSign extends StatelessWidget {
         ),
 
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text('The early symptoms and warning signs of cancer are below'
-                'Appetite: You lose your appetite or lose weight loss for no reason'
-                'Bleeding: You notice abnormal bleeding from anywhere in your body'
-                'Bruising: You notice areas with unusual colour on your skin'
-                'Fever: You have a raised body temperature that you can"t explain'
-                'Headaches: You get frequent headaches, especially if you also throw up (vomit)'
-                'Illness: You feel unwell for no obvious reason'
-                'Infection: You develop unexplained, repeated and ongoing infections'
-                'Lumps and bumps: You notice an unusual swelling in your neck, breast, belly (abdomen) or testicles'
-                'Movement: You have problems maintaining your balance or with walking, or you are getting clumsy'
-                'Pain: You notice an unusual pain anywhere in or on your body that does not go away'
-                'Tiredness: You feel tired for no reason and lack energy'
-                'Skin: You notice that a new or existent mole or spot changes in size, shape or colour, '
-                'or looks unusually different'
-                'Vision: You get sudden changes in eyesight or develop double vision'
+      body: ListView(
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+
+                Text( 'The early symptoms and warning signs of cancer are below',
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: Colors.black,
+                  ),),
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(right:3.0),
+                      child: Text('-',
+                        style: TextStyle(
+                            fontSize: 14,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold
+                        ),),
+                    ),
+                    Text('Appetite: ' ,
+                      style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold
+                      ),),
+                    Text('You lose your appetite or lose ',
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.black,
+
+                      ),)
+                  ],
+                ),
+                Text('    weight loss for no reason',
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: Colors.black,
+                  ),),
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(right:3.0),
+                      child: Text('-',
+                        style: TextStyle(
+                            fontSize: 14,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold
+                        ),),
+                    ),
+                    Text( 'Bleeding: ' ,
+                      style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold
+                      ),),
+                    Text('You notice abnormal bleeding ',
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.black,
+
+                      ),)
+                  ],
+                ),
+                Text('    from anywhere in your body',
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: Colors.black,
+                  ),),
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(right:3.0),
+                      child: Text('-',
+                        style: TextStyle(
+                            fontSize: 14,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold
+                        ),),
+                    ),
+                    Text('Bruising: ' ,
+                      style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold
+                      ),),
+                    Text('You notice areas with unusual ',
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.black,
+
+                      ),)
+                  ],
+                ),
+                Text('    colour on your skin',
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: Colors.black,
+                  ),),
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(right:3.0),
+                      child: Text('-',
+                        style: TextStyle(
+                            fontSize: 14,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold
+                        ),),
+                    ),
+                    Text('Fever: ' ,
+                      style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold
+                      ),),
+                    Text('You have a raised body ',
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.black,
+
+                      ),)
+                  ],
+                ),
+                Text('    temperature that you can not explain',
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: Colors.black,
+                  ),),
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(right:3.0),
+                      child: Text('-',
+                        style: TextStyle(
+                            fontSize: 14,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold
+                        ),),
+                    ),
+                    Text(  'Headaches: ' ,
+                      style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold
+                      ),),
+                    Text('You get frequent headaches',
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.black,
+
+                      ),)
+                  ],
+                ),
+                Text('    especially if you also throw up (vomit)',
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: Colors.black,
+                  ),),
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(right:3.0),
+                      child: Text('-',
+                        style: TextStyle(
+                            fontSize: 14,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold
+                        ),),
+                    ),
+                    Text('Infection: ' ,
+                      style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold
+                      ),),
+                    Text('You develop unexplained,',
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.black,
+                      ),)
+                  ],
+                ),
+                Text('    repeated and ongoing infections',
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: Colors.black,
+                  ),),
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(right:3.0),
+                      child: Text('-',
+                        style: TextStyle(
+                            fontSize: 14,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold
+                        ),),
+                    ),
+                    Text( 'Movement: ' ,
+                      style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold
+                      ),),
+                    Text('You have problems maintaining',
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.black,
+
+                      ),)
+                  ],
+                ),
+                Text('    your balance or with walking, or you are\n     getting clumsy',
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: Colors.black,
+                  ),),
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(right:3.0),
+                      child: Text('-',
+                        style: TextStyle(
+                            fontSize: 14,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold
+                        ),),
+                    ),
+                    Text( 'Pain: ' ,
+                      style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold
+                      ),),
+                    Text('You notice an unusual pain anywhere',
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.black,
+
+                      ),)
+                  ],
+                ),
+                Text('    in or on your body that does not go away',
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: Colors.black,
+                  ),),
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(right:3.0),
+                      child: Text('-',
+                        style: TextStyle(
+                            fontSize: 14,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold
+                        ),),
+                    ),
+                    Text( 'Tiredness: ' ,
+                      style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold
+                      ),),
+                    Text('You feel tired for no reason',
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.black,
+
+                      ),)
+                  ],
+                ),
+                Text('    and lack energy',
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: Colors.black,
+                  ),),
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(right:3.0),
+                      child: Text('-',
+                        style: TextStyle(
+                            fontSize: 14,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold
+                        ),),
+                    ),
+                    Text(  'Vision: ' ,
+                      style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold
+                      ),),
+                    Text('You get sudden changes in eyesight',
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.black,
+
+                      ),)
+                  ],
+                ),
+                Text('    or develop double vision',
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: Colors.black,
+                  ),),
+              ],
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

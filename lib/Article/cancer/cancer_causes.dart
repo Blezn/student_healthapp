@@ -47,33 +47,197 @@ class CancerCauses extends StatelessWidget {
                     fontSize: 14,
                     color: Colors.black,
                   ),),
-                Text('Alcohol: If you misuse alcohol, you are at higher\n'
-                    ' risk of getting liver cancer'
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(right:3.0),
+                      child: Text('-',
+                        style: TextStyle(
+                          fontSize: 14,
+                          color: Colors.black,
+                            fontWeight: FontWeight.bold
+                        ),),
+                    ),
+                    Text('Alcohol: ',
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold
+                      ),),
+                    Text('If you misuse alcohol, you are ',
+                      style: TextStyle(
+                          fontSize: 14,
+                          color: Colors.black,
+
+                      ),)
+                  ],
+                ),
+                Text('at higher risk of getting liver cancer'
                     'Family: You may be at higher risk of cancer\n'
                     'when it runs in your closer family, especially\n'
-                    'parents and siblings\n'
-                    'Infections: Some forms of human papilloma\n'
-                    '(HPV) or hepatitis viruses, for example, can \n'
+                    'parents and siblings\n',
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: Colors.black,
+                  ),),
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(right:3.0),
+                      child: Text('-',
+                        style: TextStyle(
+                            fontSize: 14,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold
+                        ),),
+                    ),
+                    Text('Infections: ',
+                      style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold
+                      ),),
+                    Text('Some forms of human papilloma',
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.black,
+
+                      ),)
+                  ],
+                ),
+                Text('(HPV) or hepatitis viruses, for example, can \n'
                     'cause cervical cancer (on the neck of the \n'
-                    'womb) or liver cancer, respectively\n'
-                    'Later life: You are more likely to develop \n'
-                    'cancers as you get older\n'
-                    'Lifestyle: An unhealthy diet, being too heavy\n'
-                    'for your height and not moving your body\n'
-                    'enough all increase your risk of cancer\n'
-                    'Previous cancer: When you have had cancer in\n'
-                    'the past, it may come back, even if it is been\n'
-                    ' successfully treated\n'
-                    'Smoking: If you smoke, this greatly increases\n'
-                    'the risk of certain cancers, such as lung and\n'
+                    'womb) or liver cancer, respectively\n',
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: Colors.black,
+                  ),),
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(right:3.0),
+                      child: Text('-',
+                        style: TextStyle(
+                            fontSize: 14,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold
+                        ),),
+                    ),
+                    Text('Lifestyle: ',
+                      style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold
+                      ),),
+                    Text('An unhealthy diet, being too heavy',
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.black,
+
+                      ),)
+                  ],
+                ),
+                Text( 'for your height and not moving your body\n'
+                    'enough all increase your risk of cancer\n',
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: Colors.black,
+                  ),),
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(right:3.0),
+                      child: Text('-',
+                        style: TextStyle(
+                            fontSize: 14,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold
+                        ),),
+                    ),
+                    Text('Smoking: ',
+                      style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold
+                      ),),
+                    Text('If you smoke, this greatly increases',
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.black,
+
+                      ),)
+                  ],
+                ),
+                Text( 'the risk of certain cancers, such as lung and\n'
                     'bladder cancer, or cancer of the cervix (the\n'
-                    'neck of the womb) in women\n'
-                    'Sun and UV: Getting too much ultraviolet (UV)\n'
-                    ' light from the sun or sunbeds and some other\n'
-                    'forms of radiation can cause skin cancer\n'
-                    'Toxic chemicals: Contact with certain\n'
-                    'industrial chemicals increases your risk of\n'
-                    'bladder cancer'),
+                    'neck of the womb) in women\n',
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: Colors.black,
+                  ),),
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(right:3.0),
+                      child: Text('-',
+                        style: TextStyle(
+                            fontSize: 14,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold
+                        ),),
+                    ),
+                    Text('Sun and UV: ',
+                      style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold
+                      ),),
+                    Text('Getting too much ultraviolet(UV)',
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.black,
+
+                      ),)
+                  ],
+                ),
+                Text( ' light from the sun or sunbeds and some other\n'
+                    'forms of radiation can cause skin cancer\n',
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: Colors.black,
+                  ),),
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(right:3.0),
+                      child: Text('-',
+                        style: TextStyle(
+                            fontSize: 14,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold
+                        ),),
+                    ),
+                    Text('Toxic chemicals: ',
+                      style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold
+                      ),),
+                    Text('Contact with certain',
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.black,
+
+                      ),)
+                  ],
+                ),
+                Text('industrial chemicals increases your risk of\n'
+                        'bladder cancer',
+                  style: TextStyle(
+                  fontSize: 14,
+                  color: Colors.black,
+                ),),
+
                 Center(
                   child: Padding(
                     padding: const EdgeInsets.symmetric(vertical:10),
@@ -96,6 +260,7 @@ class CancerCauses extends StatelessWidget {
                             'if you think you are at the higher risk of cancer,\n'
                             'because you may benefit from further\n'
                             'assessment and regular check-ups.',
+                          textAlign: TextAlign.center,
                           style: TextStyle(
                             fontSize: 12,
                             color: Colors.black,

@@ -29,20 +29,20 @@ class CancerDescription extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('Cancer develops when body cells and tissue start to '
-                'grow out of control '
+            Text('Cancer develops when body cells and tissue\n start to '
+                'grow out of control, '
                 'Cancers can grow and spread into the surrounding '
-                'tissues. Depending on the type, they may even '
-                'travel to more distant organs.'
+                'tissues.\n Depending on the type, they may even '
+                'travel to\n more distant organs.'
           ),
             Center(
               child: Padding(
                 padding: const EdgeInsets.symmetric(vertical:10),
                 child: Container(
                   height: 100,
-                  width: 300,
+                  width: 290,
                   decoration: BoxDecoration(
-                    color: Colors.grey,
+                    color: Colors.lightBlueAccent,
                     boxShadow: [
                       BoxShadow(
                           color: Colors.blueGrey.withOpacity(0.5),
@@ -53,16 +53,25 @@ class CancerDescription extends StatelessWidget {
                     borderRadius: BorderRadius.all(Radius.circular(10),),
                   ),
                   child: Center(
-                    child: Text('Fact: There are over 200 different types of cancer,'
-                        'which can involve almost any part of the body'
-                        'and cause various symptoms'
+                    child: Text('FACT: There are over 200 different types\n   of cancer,'
+                        'which can involve almost any\n   part of the body'
+                        'and cause various\n  symptoms',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: Colors.black,
+                      ),
                     ),
                   ),
                 ),
               ),
             ),
             Text('Some commoner types of cancer in young adults\n'
-                'include cancer of the:\n'
+                'include cancer of the:\n',
+              style: TextStyle(
+                fontSize: 14,
+                color: Colors.black,
+              ),
             ),
             Padding(
               padding: const EdgeInsets.only(left:20),
@@ -74,7 +83,11 @@ class CancerDescription extends StatelessWidget {
                   'Lymph glands (lymphoma)\n'
                   'Men"s testicles\n'
                   'Thyroid gland\n'
-                  'Skin (melanoma)'),
+                  'Skin (melanoma)',
+                style: TextStyle(
+                  fontSize: 14,
+                  color: Colors.black,
+                ),),
             )
           ],
         ),

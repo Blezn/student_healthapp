@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:studenthealthapp/screens/dashboard.dart';
 import 'package:studenthealthapp/main.dart';
 import 'package:studenthealthapp/utils/navigation_helper.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
@@ -39,7 +38,7 @@ class OnBoardingScreen extends StatelessWidget {
                           child: Text(
                             'Skip',
                             textAlign: TextAlign.left,
-                            style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold, color: Colors.purple),
+                            style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold, color: Colors.deepPurpleAccent),
                           ),
                         ),
                       ),
@@ -50,7 +49,7 @@ class OnBoardingScreen extends StatelessWidget {
                     child: Container(
                         height: 232,
                         width: 281,
-                        child: Image.asset('${images[index]}')),
+                        child: Image.asset('${images[index]}',)),
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top:20,bottom:30),
@@ -69,7 +68,7 @@ class OnBoardingScreen extends StatelessWidget {
             );
           },
           pagination: SwiperPagination(
-              builder: DotSwiperPaginationBuilder(activeColor: Colors.blue, color: Color(0xffE7E6E6))
+              builder: DotSwiperPaginationBuilder(activeColor: Colors.deepPurpleAccent, color: Color(0xffE7E6E6))
           ),
           control: SwiperControl(iconNext: null,iconPrevious: null),
 

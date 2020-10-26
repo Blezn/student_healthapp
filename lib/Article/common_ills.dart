@@ -1,8 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:studenthealthapp/Article/Malaria/malaria.dart';
 import 'package:studenthealthapp/Article/cancer/cancer.dart';
-import 'package:studenthealthapp/utils/navigation_helper.dart';
-
 class CommonIlls extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -33,14 +32,6 @@ class CommonIlls extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('Common Cold',style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-              color: Colors.black
-            ),),
-            Divider(
-              color: Colors.black54,
-            ),
             GestureDetector(
               onTap: () {
                 Navigator.push(context,
@@ -55,11 +46,17 @@ class CommonIlls extends StatelessWidget {
             Divider(
               color: Colors.black54,
             ),
-            Text('Malaria',style: TextStyle(
-                fontSize: 18,
-              fontWeight: FontWeight.bold,
-                color: Colors.black,
-            ),),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Malaria()));
+              },
+              child: Text('Malaria',style: TextStyle(
+                  fontSize: 18,
+                fontWeight: FontWeight.bold,
+                  color: Colors.black,
+              ),),
+            ),
           ],
         ),
       ),

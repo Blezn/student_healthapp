@@ -31,34 +31,181 @@ class CancerTreatment extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text( 'Action: Cancer can cause all sorts of symptoms and health issues, which is why it"s'
-              'best to see your doctor if you notice anything unusual in your body that persists for more '
-              'than a couple of weeks and that you can"t explain.'
-              'How can I reduce my risk of getting cancer?'
-              'According to Cancer Research UK, we may be able to prevent 2 in 5 cancer cases by making healthier'
-              ' choices in our lives.'
-              'Fact: You can"t catch cancer, but certain infections - such as hepatitis or human papilloma virus '
-              '(HPV) - can put you at higher risk.'
-              'Here are examples of lifestyle changes that can help you prevent cancer:'
-              'Alcohol: Reduce your alcohol intake. The more alcohol you drink, the higher the chance of '
-              'developing certain cancers. Learn more in the section on alcohol misuse'
-              'Fitness: Keeping active could avoid around 3,400 cases of cancer in the UK each year'
-              'Healthy eating: Eat a healthy diet containing enough fibre, fruit and vegetables and less red and'
-              ' processed meat. A healthy diet prevents about 1 in 10 cancers'
-              'Infections: You can avoid human papilloma virus (HPV) infections, of which some forms can cause cancer,'
-              ' by practising safer sex (using condoms) and getting vaccinated'
-              'Smoking: If you smoke, it"s best to quit. Smoking is the biggest avoidable cause of cancer world-wide.'
-              ' Giving up smoking is not only good for your health, but can also save you a lot of money'
-              'Sun safety: Be safe in the sun to avoid skin cancer. Avoid strong sunlight by moving into the shade, '
-              'covering up with clothes and using a high sun protection factor (minimum SPF 15 and 4 stars). '
-              'Learn more in the sections on moles and sun safety'
-              'Weight: Maintain a healthy weight. In the UK, about 1 in 20 cancers are caused by being too overweight'
-              'Tip: Find more information and detailed figures on preventable cancers under further info.'
-              'Which sources did we use?'
-              'Key sources for this section include:'
-              'Cancer Research UK. Cancer statistics for the UK. Available via: www.cancerresearchuk.org'
-              'American Cancer Society. Cancer A-Z. Available via: www.cancer.org'
+          Text('How can I reduce my risk of getting cancer?',
+              style: TextStyle(
+                fontSize: 20,
+                color: Colors.black,
+                fontWeight: FontWeight.bold,
+              ),),
+
+          Padding(
+            padding: const EdgeInsets.only(left:15),
+            child: Text('According to Cancer Research UK,\nwe may be able to prevent 2 in 5 cancer cases by\nmaking healthier'
+                ' choices in our lives.'
+                'Here are examples of lifestyle changes that\n can help you prevent cancer:',
+              style: TextStyle(
+                fontSize:15,
+                color: Colors.black,
+
+              ),),
           ),
+          Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(right:3.0),
+                child: Text('-',
+                  style: TextStyle(
+                      fontSize: 14,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold
+                  ),),
+              ),
+              Text( 'Healthy eating:',
+                style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold
+                ),),
+              Text(' Eat a healthy diet ',
+                style: TextStyle(
+                  fontSize: 14,
+                  color: Colors.black,
+
+                ),)
+            ],
+          ),
+          Text( 'containing enough a fibre, fruit and vegetables\nand less red and'
+              ' processed meat. A healthy\ndiet prevents about 1 in 10 cancers ',
+            style: TextStyle(
+              fontSize: 14,
+              color: Colors.black,
+            ),),
+          Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(right:3.0),
+                child: Text('-',
+                  style: TextStyle(
+                      fontSize: 14,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold
+                  ),),
+              ),
+              Text('Infections: ',
+                style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold
+                ),),
+              Text(' You can avoid human',
+                style: TextStyle(
+                  fontSize: 14,
+                  color: Colors.black,
+
+                ),)
+            ],
+          ),
+          Text( 'papilloma virus(HPV) infections, of which some\nforms can cause cancer,'
+              ' by practising safer sex\n(using condoms) and getting vaccinated',
+            style: TextStyle(
+              fontSize: 14,
+              color: Colors.black,
+            ),),
+          Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(right:3.0),
+                child: Text('-',
+                  style: TextStyle(
+                      fontSize: 14,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold
+                  ),),
+              ),
+              Text('Smoking: ',
+                style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold
+                ),),
+              Text('If you smoke, it is best to quit.',
+                style: TextStyle(
+                  fontSize: 14,
+                  color: Colors.black,
+
+                ),)
+            ],
+          ),
+          Text( 'Smoking is thebiggest avoidable cause of\ncancer world-wide.'
+              ' Giving up smoking is not\nonly good for your health, but can also save\nyou a lot of money',
+            style: TextStyle(
+              fontSize: 14,
+              color: Colors.black,
+            ),),
+          Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(right:3.0),
+                child: Text('-',
+                  style: TextStyle(
+                      fontSize: 14,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold
+                  ),),
+              ),
+              Text( 'Sun safety: ',
+                style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold
+                ),),
+              Text(' Be safe in the sun to avoid',
+                style: TextStyle(
+                  fontSize: 14,
+                  color: Colors.black,
+
+                ),)
+            ],
+          ),
+          Text( 'skin cancer.\nAvoid strong sunlight by moving into the shade,\n'
+              'covering up with clothes and using a high sun\nprotection factor (minimum SPF 15 and 4 stars).\n',
+            style: TextStyle(
+              fontSize: 14,
+              color: Colors.black,
+            ),),
+          Center(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(vertical:10),
+              child: Container(
+                height: 75,
+                width: 300,
+                decoration: BoxDecoration(
+                  color: Colors.greenAccent,
+                  boxShadow: [
+                    BoxShadow(
+                        color: Colors.green.withOpacity(0.5),
+                        spreadRadius:1,
+                        blurRadius: 2
+                    ),
+                  ],
+                  borderRadius: BorderRadius.all(Radius.circular(10),),
+                ),
+                child: Center(
+                  child: Text( 'Key sources for this section include: '
+                      'Cancer Research UK. Cancer statistics for the\nUK. Available via: www.cancerresearchuk.org'
+                      'American Cancer Society. Cancer A-Z. Available via: www.cancer.org',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+
+
         ],
       ),
       ),

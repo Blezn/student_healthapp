@@ -1,6 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+import 'package:studenthealthapp/Article/bone_muscle.dart';
+import 'file:///C:/Users/User/AndroidStudioProjects/student_healthapp/lib/Article/abdomen.dart';
 import 'package:studenthealthapp/Article/common_ills.dart';
+import 'package:studenthealthapp/Article/drinks_drugs.dart';
+import 'package:studenthealthapp/Article/head_chest.dart';
+import 'package:studenthealthapp/Article/healthy_living.dart';
+import 'package:studenthealthapp/Article/living_with.dart';
+import 'package:studenthealthapp/Article/mind.dart';
+import 'package:studenthealthapp/Article/skin.dart';
+import 'file:///C:/Users/User/AndroidStudioProjects/student_healthapp/lib/Article/first_aid.dart';
 import 'package:studenthealthapp/custom_widgets/custom_container.dart';
 
 class Home extends StatelessWidget {
@@ -8,145 +17,175 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading:Icon(Icons.menu,),
-
+        title: Text(
+          'Stdent Health App',
+          style: TextStyle(
+            fontSize: 18,
+            fontWeight: FontWeight.w600,
+            color: Color(0xffffffff),
+          ),
+        ),
       ),
       body: ListView(
         children: [
-          Column(
-            children: [
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal:8, vertical:10),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(right:12),
-                      child: HealthContainer(
-                        color: Colors.purple,
-                        icon: MdiIcons.menu,
-                        title: 'First Aid',
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical:30),
+            child: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal:8, vertical:10),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(right:12),
+                        child: HealthContainer(
+                          color: Colors.purple,
+                          icon: MdiIcons.menu,
+                          images: 'assets/images/aid.png',
+                          title: 'First Aid',
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) => FirstAids()));
+                          },
+                        ),
                       ),
-                    ),
-                    HealthContainer(
-                      color: Colors.deepPurpleAccent,
-                      icon: MdiIcons.menu,
-                      title: 'Common Ills',
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => CommonIlls()));
-                      },
-                    ),
-                  ],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal:8, ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(right:12),
-                      child: HealthContainer(
-                        color: Colors.amber,
-                        icon: MdiIcons.menu,
-                        title: 'Abdomen',
+                      HealthContainer(
+                        color: Colors.deepPurpleAccent,
+                        images: 'assets/images/cap.png',
+                        title: 'Common Ills',
+                        onPressed: () {
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => CommonIlls()));
+                        },
                       ),
-                    ),
-                    HealthContainer(
-                      color: Colors.red,
-                      icon: MdiIcons.menu,
-                      title: 'Skin',
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Home()));
-                      },
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal:8, vertical:10),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(right:12),
-                      child: HealthContainer(
-                        color: Colors.green,
-                        icon: MdiIcons.menu,
-                        title: 'Head & Chest',
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal:8, ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(right:12),
+                        child: HealthContainer(
+                          color: Colors.amber,
+                          images: 'assets/images/stomach.png',
+                          title: 'Abdomen',
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) => Abdomen()));
+                          },
+                        ),
                       ),
-                    ),
-                    HealthContainer(
-                      color: Colors.blue,
-                      icon: MdiIcons.menu,
-                      title: 'Mind',
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Home()));
-                      },
-                    ),
-                  ],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal:8, ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(right:12),
-                      child: HealthContainer(
-                        color: Colors.lightGreen,
-                        icon: MdiIcons.menu,
-                        title: 'Bone & Muscles',
+                      HealthContainer(
+                        color: Colors.red,
+                        images: 'assets/images/wine.png',
+                        title: 'Drinks & Drugs',
+                        onPressed: () {
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => DrinksDrugs()));
+                        },
                       ),
-                    ),
-                    HealthContainer(
-                      color: Colors.pink,
-                      icon: MdiIcons.menu,
-                      title: 'Drink & Drugs',
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Home()));
-                      },
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal:8, vertical:10),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(right:12),
-                      child: HealthContainer(
-                        color: Colors.brown,
-                        icon: MdiIcons.menu,
-                        title: 'Healty living',
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal:8, vertical:10),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(right:12),
+                        child: HealthContainer(
+                          color: Colors.green,
+                          images: 'assets/images/user.png',
+                          title: 'Head & Chest',
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) =>HeadChest()));
+                          },
+                        ),
                       ),
-                    ),
-                    HealthContainer(
-                      color: Colors.purpleAccent,
-                      icon: MdiIcons.menu,
-                      title: 'Living with',
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Home()));
-                      },
-                    ),
-                  ],
+                      HealthContainer(
+                        color: Colors.blue,
+                        images: 'assets/images/mind.png',
+                        title: 'Mind',
+                        onPressed: () {
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => Mind()));
+                        },
+                      ),
+                    ],
+                  ),
                 ),
-              ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal:8, ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(right:12),
+                        child: HealthContainer(
+                          color: Colors.lightGreen,
+                          images: 'assets/images/bone.png',
+                          title: 'Bone & Muscles',
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) => BoneMuscle()));
+                          },
+                        ),
+                      ),
+                      HealthContainer(
+                        color: Colors.pink,
+                        images: 'assets/images/drop.png',
+                        title: 'Skin',
+                        onPressed: () {
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => Skin()));
+                        },
+                      ),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal:8, vertical:10),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(right:12),
+                        child: HealthContainer(
+                          color: Colors.brown,
+                          images: 'assets/images/dumbbell.png',
+                          title: 'Healty living',
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) => HealthyLiving()));
+                          },
+                        ),
+                      ),
+                      HealthContainer(
+                        color: Colors.purpleAccent,
+                        images: 'assets/images/disab.png',
+                        title: 'Living with',
+                        onPressed: () {
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => LivingWith()));
+                        },
+                      ),
+                    ],
+                  ),
+                ),
 
-            ],
+              ],
+            ),
           ),
         ],
       ),

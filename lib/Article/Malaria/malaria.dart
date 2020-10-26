@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:studenthealthapp/Article/cancer/cancer_description.dart';
+import 'package:studenthealthapp/Article/Malaria/malaria_causes.dart';
+import 'package:studenthealthapp/Article/Malaria/malaria_description.dart';
+import 'package:studenthealthapp/Article/Malaria/malaria_treatment.dart';
+import 'package:studenthealthapp/Article/Malaria/malaria_warning.dart';
 class Malaria extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -25,71 +28,100 @@ class Malaria extends StatelessWidget {
 
       ),
       body: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(10),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Row(
-              children: [
-                Icon(Icons.book),
-                GestureDetector(
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => CancerDescription()));
-                  },
-                  child: Text('Description',style: TextStyle(
-                      fontSize: 12,
+            GestureDetector(
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => MalariaDescription()));
+              },
+              child: Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(right:3),
+                    child: Icon(Icons.book,color: Colors.blue,size: 18,),
+                  ),
+                  Text('Description',style: TextStyle(
+                      fontSize: 18,
                       fontWeight: FontWeight.bold,
-                      color: Colors.black12
+                      color: Colors.black54
                   ),),
-                ),
-
-              ],
+                ],
+              ),
             ),
             Divider(
-              color: Colors.black,
+              color: Colors.black12,
               thickness: 1,
             ),
-            Row(
-              children: [
-                Icon(Icons.book),
-                Text('Causes',style: TextStyle(
-                    fontSize: 12,
+            GestureDetector(
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => MalariaCauses()));
+              },
+              child: Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(right:3),
+                    child: Icon(Icons.flash_on,color: Colors.blue,),
+                  ),
+                  Text('Causes',style: TextStyle(
+                    fontSize: 18,
                     fontWeight: FontWeight.bold,
-                    color: Colors.black12
-                ),),
+                    color: Colors.black54,
+                  ),),
 
-              ],
+                ],
+              ),
             ),
             Divider(
-              color: Colors.black,
+              color: Colors.black12,
               thickness: 1,
             ),
-            Row(
-              children: [
-                Icon(Icons.book,color: Colors.blue,),
-                Text('Warning signs',style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black12
-                ),),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => MalariaWarningSign()));
+              },
+              child: Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(right:3),
+                    child: Icon(Icons.warning,color: Colors.red,),
+                  ),
+                  Text('Warning signs',style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black54
+                  ),),
 
-              ],
+                ],
+              ),
             ),
             Divider(
-              color: Colors.black,
+              color: Colors.black12,
               thickness: 1,
             ),
-            Row(
-              children: [
-                Icon(Icons.book),
-                Text('Treatment',style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black12
-                ),),
-              ],
+            GestureDetector(
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => MalariaTreatment()));
+              },
+              child: Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(right:3),
+                    child: Icon(Icons.favorite, color: Colors.green,),
+                  ),
+                  Text('Treatment',style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black54
+                  ),),
+                ],
+              ),
             ),
 
           ],

@@ -4,8 +4,9 @@ class HealthContainer extends StatelessWidget {
   final IconData icon;
   final Color color;
   final VoidCallback onPressed;
+  final String images;
 
-  HealthContainer({this.title,this.onPressed,this.icon,this.color});
+  HealthContainer({this.title,this.onPressed,this.icon,this.color,this.images});
 
   @override
   Widget build(BuildContext context) {
@@ -16,12 +17,12 @@ class HealthContainer extends StatelessWidget {
         width: 165,
         decoration: BoxDecoration(
             color: color,
-            borderRadius: BorderRadius.all(Radius.circular(3))),
+            borderRadius: BorderRadius.all(Radius.circular(5))),
         child:Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(icon,color: Colors.white,),
+            Image.asset('$images',height:50,width:50),
             Text('$title',
               style:TextStyle(
                 fontSize: 10,

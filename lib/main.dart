@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:studenthealthapp/Article/cancer/cancer.dart';
 import 'package:studenthealthapp/screens/About_us.dart';
 import 'package:studenthealthapp/screens/dashboard.dart';
 import 'package:studenthealthapp/screens/feedback.dart';
 import 'package:studenthealthapp/screens/splash_screen.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+import 'package:studenthealthapp/screens/workout.dart';
 
 void main() => runApp(MyApp());
 
@@ -38,7 +38,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
   void initState() {
     pages = [
       Home(),
-      Home(),
+     Workout(),
       Feed(),
      AboutUs(),
     ];
@@ -66,7 +66,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.store,
+              Icons.airline_seat_legroom_normal,
               color: page==1?Colors.white:Colors.grey,
             ),
             title: Text('Workout',
